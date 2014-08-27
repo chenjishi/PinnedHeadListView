@@ -6,13 +6,13 @@ pinned head for ListView and ExpandableListView, support for pinned view's child
 ##ScreenShot
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenjishi/PinnedHeadListView/master/list1.jpg" 
-  alt="usite" height="960" width="540"/>
+  alt="usite" height="480" width="270"/>
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenjishi/PinnedHeadListView/master/list2.jpg" 
-  alt="usite" height="960" width="540"/>
+  alt="usite" height="480" width="270"/>
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenjishi/PinnedHeadListView/master/list3.jpg" 
-  alt="usite" height="960" width="540"/>
+  alt="usite" height="480" width="270"/>
 </p>
