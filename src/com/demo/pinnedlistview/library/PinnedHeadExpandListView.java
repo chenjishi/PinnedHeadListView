@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -134,11 +135,9 @@ public class PinnedHeadExpandListView extends ExpandableListView {
     }
 
     public void configureHeaderView(int position) {
-        final int group = getPackedPositionGroup(getExpandableListPosition(position));
-        int groupView = getFlatListPosition(getPackedPositionForGroup(group));
-
         if (null == mHeaderView) return;
 
+        final int group = getPackedPositionGroup(getExpandableListPosition(position));
         int state, nextSectionPosition = getFlatListPosition(getPackedPositionForGroup(group + 1));
 
         if (mAdapter.getGroupCount() == 0) {
@@ -176,7 +175,6 @@ public class PinnedHeadExpandListView extends ExpandableListView {
                     break;
                 }
                 int bottom = firstView.getBottom();
-                int itemHeight = firstView.getHeight();
                 int headerHeight = mHeaderView.getHeight();
                 int y;
                 if (bottom < headerHeight) {

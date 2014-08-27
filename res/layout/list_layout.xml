@@ -3,6 +3,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
+              android:layout_height="match_parent"
+              android:background="#F1F1F1">
+    <com.demo.pinnedlistview.library.PinnedHeadListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:divider="#E5E5E5"
+            android:dividerHeight="1px"/>
 </LinearLayout>
